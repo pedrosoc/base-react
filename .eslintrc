@@ -17,5 +17,50 @@
         "ecmaFeatures": {
             "jsx": true
         }
+    },
+    "rules": {
+        "complexity": ["error", 2],
+        "consistent-return": "error",
+        "dot-notation": "error",
+        "eqeqeq": "error",
+        "no-alert": "error",
+        "no-else-return": "error",
+        "no-empty-function": "error",
+        "no-eq-null": "error",
+        "no-extra-parens": "error",
+        "no-extra-bind": "error",
+        "no-implied-eval": "error",
+        "no-multi-spaces": "error",
+        "no-multi-str": "error",
+        "no-new": "error",
+        "no-new-func": "error",
+        "no-new-wrappers": "error",
+        "no-param-reassign": "error",
+        "no-return-assign": "error",
+        "no-return-await": "error",
+        "no-throw-literal": "error",
+        "no-unmodified-loop-condition": "error",
+        "no-useless-return": "error",
+        "require-await": "error",
+        "yoda": "error",
+
+        "no-undefined": "error",
+        "no-use-before-define": "error",
+
+        "array-bracket-spacing": ["error", "never"],
+        "block-spacing": "error",
+        "brace-style": "error",
+        "comma-dangle": ["error", "never"],
+        "comma-spacing": ["error", { "before": false, "after": true }],
+        "comma-style": ["error", "last"],
+        "computed-property-spacing": ["error", "never"],
+        "eol-last": ["error", "always"],
+        "func-call-spacing": ["error", "never"],
+        "implicit-arrow-linebreak": ["error", "beside"],
+        "indent": ["error", "tab"],
+        "jsx-quotes": ["error", "prefer-double"],
+        "key-spacing": ["error", { "beforeColon": false }],
+
+        "no-warning-comments": ["warn", { "terms": ["todo", "fixme"], "location": "anywhere" }]
     }
 }
