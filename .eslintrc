@@ -1,14 +1,17 @@
 {
     "env": {
         "browser": true,
-        "es6": true
+        "es6": true,
+        "jest/globals": true
     },
     "plugins": [
-        "react"
+        "react",
+        "jest"
     ],
     "extends": [
         "eslint:recommended", 
-        "plugin:react/recommended"
+        "plugin:react/recommended",
+        "plugin:jest/recommended"
     ],
     "parser": "babel-eslint",
     "parserOptions": {
