@@ -11,19 +11,14 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "test:ci": "cross-env CI=true yarn test",
     "eject": "react-scripts eject",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
-  "pre-commit": [ "lint" ],
-  "pre-push": [ "test:ci" ],
   "devDependencies": {
     "babel-eslint": "8",
     "eslint": "^5.6.0",
     "eslint-plugin-react": "^7.11.1",
-    "eslint-plugin-jest": "^21.22.0",
-    "pre-commit": "^1.2.2",
-    "pre-push": "^0.1.1"
+    "eslint-plugin-jest": "^21.22.0"
   }
 }
