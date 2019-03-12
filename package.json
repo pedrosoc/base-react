@@ -15,7 +15,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "precommit": "yarn lint",
-    "prepush": "yarn test"
+    "prepush": "run-s lint-fix:**"
   },
   "devDependencies": {
     "babel-eslint": "8",
