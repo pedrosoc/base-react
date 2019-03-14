@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "cross-env": "^5.2.0",
     "lint-staged": "^8.1.5",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
@@ -23,13 +24,15 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "test:ci": "cross-env CI=true npm run test",
     "eject": "react-scripts eject",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "lint-fix": "run-s lint-fix:**",
     "lint-fix:js": "eslint --fix --ext=js --ext=jsx ./src",
     "lint-fix:css": "stylelint --config=.stylelintrc 'src/**/*.css' --fix",
-    "test-lint": "eslint --fix-dry-run ./src"
+
+    "precommit": "lint-staged",
+    "prepush": "npm run test:ci"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
