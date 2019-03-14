@@ -1,0 +1,10 @@
+{
+  "rules": {
+    "indentation": 4,
+    "length-zero-no-unit": true,
+    "rule-empty-line-before": "always",
+    "at-rule-name-case": "lower",
+    "shorthand-property-no-redundant-values": true,
+    "number-leading-zero": "always",
+  }
+}

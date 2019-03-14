@@ -3,9 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "lint-staged": "^8.1.5",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "react-scripts": "1.1.5"
+    "react-scripts": "1.1.5",
+    "stylelint": "^9.10.1"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json}": [
+      "yarn lint-fix:js",
+      "git add"
+    ],
+    "src/**/*.css": [
+      "yarn lint-fix:css",
+      "git add"
+    ]
   },
   "scripts": {
     "start": "react-scripts start",
@@ -13,12 +25,16 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "lint-fix": "run-s lint-fix:**",
+    "lint-fix:js": "eslint --fix --ext=js --ext=jsx ./src",
+    "lint-fix:css": "stylelint --config=.stylelintrc 'src/**/*.css' --fix",
+    "test-lint": "eslint --fix-dry-run ./src"
   },
   "devDependencies": {
-    "babel-eslint": "8",
+    "babel-eslint": "^10.0.1",
     "eslint": "^5.6.0",
-    "eslint-plugin-react": "^7.11.1",
-    "eslint-plugin-jest": "^21.22.0"
+    "eslint-plugin-jest": "^21.22.0",
+    "eslint-plugin-react": "^7.11.1"
   }
 }
