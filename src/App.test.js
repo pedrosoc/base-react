@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Ap from './App';
 
 it('renders without crashing', () => {
 	const span = document.createElement('span');
-	ReactDOM.render(<App />, span);
+	ReactDOM.render(<Ap />, span);
 	ReactDOM.unmountComponentAtNode(span);
 });
