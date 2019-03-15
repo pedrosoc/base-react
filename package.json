@@ -5,21 +5,10 @@
   "dependencies": {
     "cross-env": "^5.2.0",
     "husky": "^1.3.1",
-    "lint-staged": "^8.1.5",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-scripts": "1.1.5",
     "stylelint": "^9.10.1"
-  },
-  "lint-staged": {
-    "src/**/*.{js,jsx,json}": [
-      "yarn lint-fix:js",
-      "git add"
-    ],
-    "src/**/*.css": [
-      "yarn lint-fix:css",
-      "git add"
-    ]
   },
   "scripts": {
     "start": "react-scripts start",
@@ -27,11 +16,7 @@
     "test": "react-scripts test --env=jsdom",
     "test:ci": "cross-env CI=true yarn test",
     "eject": "react-scripts eject",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "lint-fix:js": "eslint --fix --ext=js --ext=jsx ./src",
-    "lint-fix:css": "stylelint --config=.stylelintrc 'src/**/*.css' --fix",
-    "precommit": "lint-staged"
+    "lint": "eslint ."
   },
   "husky": {
     "hooks": {
