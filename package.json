@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "cross-env": "^5.2.0",
+    "husky": "^1.3.1",
     "lint-staged": "^8.1.5",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
@@ -30,9 +31,13 @@
     "lint:fix": "eslint . --fix",
     "lint-fix:js": "eslint --fix --ext=js --ext=jsx ./src",
     "lint-fix:css": "stylelint --config=.stylelintrc 'src/**/*.css' --fix",
-
-    "precommit": "lint-staged",
-    "prepush": "yarn test:ci"
+    "precommit": "lint-staged"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "yarn test:ci"
+    }
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
