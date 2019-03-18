@@ -19,8 +19,4 @@ class App extends Component {
 	}
 }
 
-function test(param){
-	console.log(param)
-}
-
 export default App;
