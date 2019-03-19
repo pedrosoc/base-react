@@ -13,4 +13,4 @@ COPY package.json /usr/src/app/package.json
 RUN npm install --silent
 
 # start app
-CMD ["npm", "start"]
+CMD ["yarn", "start"]
