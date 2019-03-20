@@ -10,7 +10,7 @@ ENV PATH /usr/src/app/node_modules/.bin:$PATH
 
 # install and cache app dependencies
 COPY package.json /usr/src/app/package.json
-RUN npm install --silent
+RUN yarn install --silent
 
 # start app
 CMD ["yarn", "start"]
