@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { keyframes } from "styled-components"
 
-import logo from "./images/logo.svg";
+import logo from "../images/logo.svg";
 
 const Container = styled.div`
 	text-align: center
