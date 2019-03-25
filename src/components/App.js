@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
-
+import React from "react";
 import styled, { keyframes } from "styled-components"
 
-import logo from './logo.svg';
+import logo from "./images/logo.svg";
 
 const Container = styled.div`
 	text-align: center
@@ -38,20 +37,18 @@ const Description = styled.p`
 	font-size: large;
 `
 
-class App extends Component {
-	render() {
-		return (
-			<Container>
-				<Header>
-					<Image src={logo} alt="logo" />
-					<Title>Welcome to React</Title>
-				</Header>
-				<Description>
-					To get started, edit <code>src/App.js</code> and save to reload.
-				</Description>
-			</Container>
-		)
-	}
+const App = () => {
+	return (
+		<Container>
+			<Header>
+				<Image src={logo} alt="logo" />
+				<Title>Welcome to React</Title>
+			</Header>
+			<Description>
+				To get started, edit <code>src/App.js</code> and save to reload.
+			</Description>
+		</Container>
+	)
 }
 
 export default App;
