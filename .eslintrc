@@ -2,7 +2,8 @@
     "env": {
         "browser": true,
         "es6": true,
-        "jest/globals": true
+        "jest/globals": true,
+        "node": true
     },
     "plugins": [
         "react",
@@ -69,6 +70,7 @@
         "indent": ["error", "tab"],
         "jsx-quotes": ["error", "prefer-double"],
         "key-spacing": ["error", { "beforeColon": false }],
+        "quotes": ["error", "double"],
 
         "no-warning-comments": ["warn", { "terms": ["todo", "fixme"], "location": "anywhere" }]
     }
