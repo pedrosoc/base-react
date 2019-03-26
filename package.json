@@ -1,6 +1,7 @@
 {
   "name": "base-react",
   "version": "0.1.0",
+  "engines": { "node": "10.9.0" },
   "private": true,
   "dependencies": {
     "@babel/core": "^7.4.0",
