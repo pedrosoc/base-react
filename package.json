@@ -1,8 +1,10 @@
 {
   "name": "base-react",
   "version": "0.1.0",
-  "engines": { "node": "10.9.0" },
   "private": true,
+  "engines": {
+    "node": "10.9.0"
+  },
   "dependencies": {
     "@babel/core": "^7.4.0",
     "autoprefixer": "7.1.6",
@@ -63,7 +65,8 @@
     "eslint-plugin-jest": "^21.22.0",
     "eslint-plugin-jsx-a11y": "6.2.1",
     "eslint-plugin-react": "^7.11.1",
-    "extract-text-webpack-plugin": "4.0.0-beta.0"
+    "extract-text-webpack-plugin": "4.0.0-beta.0",
+    "uglifyjs-webpack-plugin": "^2.1.2"
   },
   "jest": {
     "collectCoverageFrom": [
