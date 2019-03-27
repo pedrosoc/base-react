@@ -6,13 +6,16 @@
         "node": true
     },
     "plugins": [
-        "react",
-        "jest"
+        "jest",
+        "jsx-a11y",
+        "react"
     ],
     "extends": [
         "eslint:recommended", 
+        "plugin:jest/recommended",
+        "plugin:jsx-a11y/recommended",
         "plugin:react/recommended",
-        "plugin:jest/recommended"
+        "react-app"
     ],
     "settings": {
         "react": {
@@ -72,6 +75,8 @@
         "key-spacing": ["error", { "beforeColon": false }],
         "quotes": ["error", "double"],
 
-        "no-warning-comments": ["warn", { "terms": ["todo", "fixme"], "location": "anywhere" }]
+        "no-warning-comments": ["warn", { "terms": ["todo", "fixme"], "location": "anywhere" }],
+
+        "jsx-a11y/href-no-hash": "off"
     }
 }
