@@ -44,7 +44,6 @@ const App = () => {
 				<Image src={logo} alt="logo" />
 				<Title>Welcome to React</Title>
 			</Header>
-			
 			<Description>
 				To get started, edit <code>src/App.js</code> and save to reload.
 			</Description>
