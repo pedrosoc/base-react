@@ -1,0 +1,25 @@
+{
+	"collectCoverageFrom": [
+		"src/**/*.{js}"
+    ],
+	"moduleFileExtensions": [
+    "js"
+	],
+  "setupFiles": [
+    "<rootDir>/config/polyfills.js"
+  ],
+  "testEnvironment": "jsdom",
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.{js}",
+    "<rootDir>/src/**/?(*.)(spec|test).{js}"
+  ],
+  "testURL": "http://localhost",
+  "transform": {
+    "^.+\\.(js|jsx|mjs)$": "<rootDir>/node_modules/babel-jest",
+    "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
+    "^(?!.*\\.(js|jsx|mjs|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
+  },
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs)$"
+  ]
+}
