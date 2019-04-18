@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import App from "./components/App";
+import Screen from "./screens/Screen";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<Screen />, document.getElementById("root"));
 
