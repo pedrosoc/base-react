@@ -4,7 +4,13 @@
     ],
 	"moduleFileExtensions": [
     "js"
-	],
+  ],
+  "moduleNameMapper": {
+    "^react-native$": "react-native-web",
+    "^@/(.*)$": "<rootDir>/src/$1",
+    "^components/(.*)$": "<rootDir>/src/components/$1",
+    "^(i18n)$": "<rootDir>/src/_translate/i18n"
+  },
   "setupFiles": [
     "<rootDir>/config/polyfills.js"
   ],

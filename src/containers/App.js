@@ -26,8 +26,9 @@ const App = () => {
 				<Route exact path="/snippets" component={SnippetsList}/>
 				<Route exact path="/snippets/:id" component={SnippetsDetails}/>
 			</Switch>
+
 		</BrowserRouter>
-	)
+	);
 };
 
 export default App;
