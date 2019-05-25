@@ -12,10 +12,13 @@ import PostsList from "../pages/posts/PostsList";
 import SnippetsDetails from "../pages/snippets/SnippetsDetails";
 import SnippetsList from "../pages/snippets/SnippetsList";
 
+import GlobalStyle from "../_config/css/GlobalStyle"; 
+
 const App = () => {
 	return (
 		<BrowserRouter>
 
+			<GlobalStyle />
 			<Header />
 
 			<Switch>
