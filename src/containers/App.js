@@ -12,10 +12,13 @@ import PostsList from "../pages/posts/PostsList";
 import SnippetsDetails from "../pages/snippets/SnippetsDetails";
 import SnippetsList from "../pages/snippets/SnippetsList";
 
+import GlobalStyle from "@global-style"; 
+
 const App = () => {
 	return (
 		<BrowserRouter>
 
+			<GlobalStyle />
 			<Header />
 
 			<Switch>
@@ -26,8 +29,9 @@ const App = () => {
 				<Route exact path="/snippets" component={SnippetsList}/>
 				<Route exact path="/snippets/:id" component={SnippetsDetails}/>
 			</Switch>
+
 		</BrowserRouter>
-	)
+	);
 };
 
 export default App;
