@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import i18n from "i18n";
+import i18n from "@i18n";
 
 export const SnippetsDetails = ({ match }) => {
 	const { id } = match.params;

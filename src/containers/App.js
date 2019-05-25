@@ -12,7 +12,7 @@ import PostsList from "../pages/posts/PostsList";
 import SnippetsDetails from "../pages/snippets/SnippetsDetails";
 import SnippetsList from "../pages/snippets/SnippetsList";
 
-import GlobalStyle from "../_config/css/GlobalStyle"; 
+import GlobalStyle from "@global-style"; 
 
 const App = () => {
 	return (
