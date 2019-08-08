@@ -1,0 +1,44 @@
+
+{
+    "posts": [
+		{
+            "id": 1,
+            "author": "Lucas",
+            "title": "Post Title 1",
+            "text": "Post Text 1"
+        },
+		{
+            "id": 2,
+            "author": "Lucas",
+            "title": "Post Title 2",
+            "text": "Post Text 2"
+        },
+		{
+            "id": 3,
+            "author": "Lucas",
+            "title": "Post Title 3",
+            "text": "Post Text 3"
+        }
+    ],
+    "snippets": [
+		{
+            "id": 1,
+            "author": "Lucas",
+            "title": "Snippet Title 1",
+            "text": "Snippet Text 1"
+        },
+		{
+            "id": 2,
+            "author": "Lucas",
+            "title": "Snippet Title 2",
+            "text": "Snippet Text 2"
+        },
+		{
+            "id": 3,
+            "author": "Lucas",
+            "title": "Snippet Title 3",
+            "text": "Snippet Text 3"
+        }
+    ]
+
+}

@@ -1,6 +1,8 @@
-import axios from "axios"
+import axios from "axios";
 
-const API_URL = "https://myapi.com.br"
+import { config } from "./config";
+
+const API_URL = config.api.url;
 
 const http = axios.create({
 	baseURL: API_URL,
