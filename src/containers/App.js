@@ -5,12 +5,12 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Header from "../components/Header";
 
 /* Pages */
-import About from "../pages/about/About";
-import Home from "../pages/home/Home";
-import PostsDetails from "../pages/posts/PostsDetails";
-import PostsList from "../pages/posts/PostsList";
-import SnippetsDetails from "../pages/snippets/SnippetsDetails";
-import SnippetsList from "../pages/snippets/SnippetsList";
+import About from "./about";
+import Home from "./home";
+import PostsDetails from "./posts/PostDetails";
+import PostsList from "./posts/PostList";
+import SnippetsDetails from "./snippets/SnippetDetails";
+import SnippetsList from "./snippets/SnippetList";
 
 import GlobalStyle from "@global-style"; 
 
