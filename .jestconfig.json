@@ -10,7 +10,7 @@
     "^@/(.*)$": "<rootDir>/src/$1",
     "^@components/(.*)$": "<rootDir>/src/components/$1",
     "^(@global-style)$": "<rootDir>/src/_config/css/GlobalStyle",
-    "^(@i18n)$": "<rootDir>/src/_config/i18n/i18n"
+    "^(@i18n)$": "<rootDir>/src/_config/i18n"
   },
   "setupFiles": [
     "<rootDir>/config/polyfills.js"
