@@ -1,9 +1,9 @@
 import React from "react";
-import PropTypes from "prop-types";
-
 import i18n from "@i18n";
 
-export const SnippetsDetails = ({ match }) => {
+import PropTypes from "prop-types";
+
+export const Post = ({ match }) => {
 	const { id } = match.params;
 	
 	return (
@@ -11,8 +11,8 @@ export const SnippetsDetails = ({ match }) => {
 	)
 };
 
-SnippetsDetails.propTypes = {
+Post.propTypes = {
 	match: PropTypes.object
 };
 
-export default SnippetsDetails;
+export default Post;

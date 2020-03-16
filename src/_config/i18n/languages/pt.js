@@ -7,15 +7,16 @@ const messages = {
 			about: {
 				title: "Sobre"
 			},
-			post: {
-				title: "Publicações",
-				item: "Publicação {{ id }}",
-				details: "Detalhes da publicação {{ id }}"
+			posts: {
+				title: "Publicações"
 			},
-			snippet: {
-				title: "Trechos",
+			news: {
+				item: "Notícia {{ id }}",
+				title: "Notícias"
+			},
+			snippets: {
 				item: "Trecho {{ id }}",
-				details: "Detalhes do trecho {{ id }}"
+				title: "Trechos"
 			}
 		}
 	}
