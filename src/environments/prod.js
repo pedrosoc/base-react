@@ -1,6 +1,6 @@
 const config = {
 	api: {
-		url: ""
+		url: "https://pedrosoc.com.br/api"
 	}
 };
 

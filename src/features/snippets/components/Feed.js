@@ -17,7 +17,7 @@ export class Feed extends React.Component {
 	};
 
 	render() {
-		const { snippets } = this.state;
+		const { snippets = [] } = this.state;
 
 		return (
 			<div>
