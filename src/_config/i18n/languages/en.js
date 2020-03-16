@@ -7,13 +7,14 @@ const messages = {
 			home: {
 				title: "Home"
 			},
-			post: {
-				details: "Post details {{ id }}",
-				item: "Post {{ id }}",
+			posts: {
 				title: "Posts"
 			},
-			snippet: {
-				details: "Snippet details {{ id }}",
+			news: {
+				item: "News {{ id }}",
+				title: "News"
+			},
+			snippets: {
 				item: "Snippet {{ id }}",
 				title: "Snippets"
 			}
