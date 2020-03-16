@@ -1,5 +1,5 @@
 # base image
-FROM node:10.9
+FROM node:10.10
 
 # set working directory
 RUN mkdir /usr/src/app
