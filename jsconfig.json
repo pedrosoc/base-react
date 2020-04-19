@@ -4,10 +4,7 @@
         "module": "commonJS",
         "target": "es6",
         "paths": {
-            // Project relative path
             "@/*": ["./*"],
-
-            // Configs
             "@api": ["./_config/api/index"],
             "@i18n": ["./_config/i18n/index"],
             "@http": ["./_config/http"],
