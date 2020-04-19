@@ -9,8 +9,8 @@
     "^react-native$": "react-native-web",
     "^@/(.*)$": "<rootDir>/src/$1",
     "^(@global-style)$": "<rootDir>/src/_config/css/globalStyle",
-    "^(@api)$": "<rootDir>/src/_config/i18n",
-    "^(@i18n)$": "<rootDir>/src/_config/api",
+    "^(@api)$": "<rootDir>/src/_config/api",
+    "^(@i18n)$": "<rootDir>/src/_config/i18n",
     "^(@http)$": "<rootDir>/src/_config/http"
   },
   "setupFiles": [
