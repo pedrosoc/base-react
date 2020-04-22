@@ -2,8 +2,8 @@ import React from "react";
 
 import PropTypes from "prop-types";
 
-import FeedNews from "@/features/news/components/feed";
-import FeedSnippets from "@/features/snippets/components/feed";
+import FeedNews from "@/features/news/components/Feed";
+import FeedSnippets from "@/features/snippets/components/Feed";
 
 import { postTypes } from "@/constants/postTypes";
 import { getLocationParam } from "@/utils/location";

@@ -2,13 +2,13 @@ import React from "react";
 
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
-import Header from "@/components/header";
+import Header from "@/components/Header";
 
 /* Pages */
-import About from "../pages/about";
-import Feed from "../pages/feed";
-import Home from "../pages/home";
-import Post from "../pages/post";
+import About from "./About";
+import Feed from "./Feed";
+import Home from "./Home";
+import Post from "./Post";
 
 import GlobalStyle from "@global-style"; 
 
