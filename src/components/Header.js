@@ -8,7 +8,8 @@ import i18n from "@i18n";
 
 import SVG from "@/components/SVG";
 
-import { postTypes } from "@/constants/postTypes";
+import postTypes from "@/constants/postTypes";
+import styles from "@/constants/styles";
 
 const Header = ({ className }) => {
 	const types = Object.values(postTypes) || [];
@@ -53,7 +54,7 @@ export default styled(Header)`
 		height: 84px;
 
 		margin: auto;
-		padding: 0 3em;
+		padding: 0 ${styles.container_margin_small};
 	}
 
 	& .teste2 {
@@ -82,4 +83,16 @@ export default styled(Header)`
 		text-decoration: none;
 		color: #000;
 	}
+
+	@media only screen and (min-width: ${styles.breakpoint_medium}) {
+		& > div {
+        	padding: 0 ${styles.container_margin_medium};
+		}
+	}
+
+    @media only screen and (min-width: ${styles.container_large}) {
+        & > div {
+			padding: 0 ${styles.container_margin_large};
+		}
+    }
 `;

@@ -2,9 +2,13 @@ import React from "react";
 
 import i18n from "@i18n";
 
+import Container from "@/components/Container";
+
 export const Home = () => {
 	return (
-		<h4> { i18n.t("home.title") } </h4>
+		<Container>
+			<h4> { i18n.t("home.title") } </h4>
+		</Container>
 	);
 };
 

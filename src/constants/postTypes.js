@@ -3,4 +3,4 @@ const postTypes = {
 	snippets: "snippets"
 };
 
-export { postTypes };
+export default postTypes;

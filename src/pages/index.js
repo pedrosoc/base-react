@@ -10,7 +10,7 @@ import Feed from "./Feed";
 import Home from "./Home";
 import Post from "./Post";
 
-import GlobalStyle from "@global-style"; 
+import GlobalStyle from "@global-style";
 
 const App = () => {
 	return (
