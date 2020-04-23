@@ -16,7 +16,7 @@ const Container = ({ className, children }) => {
 
 Container.propTypes = {
 	className: PropTypes.string,
-	children: PropTypes.array
+	children: PropTypes.oneOfType([PropTypes.array, PropTypes.object])
 };
 
 export default styled(Container)`
