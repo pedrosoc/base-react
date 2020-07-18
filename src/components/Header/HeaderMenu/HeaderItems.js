@@ -6,6 +6,7 @@ import { NavLink } from "react-router-dom";
 
 import i18n from "@i18n";
 import postTypes from "@/constants/postTypes";
+import styles from "@/constants/styles";
 
 const HeaderItems = ({ className }) => {
 	const types = Object.values(postTypes) || [];
@@ -24,17 +25,29 @@ HeaderItems.propTypes = {
 };
 
 export default styled(HeaderItems)`
-    display: flex;
-    justify-content: space-between;
-    min-width: 300px;
-
-    height: fit-content;
-    margin-right: 30px;
-    padding-right: 30px;
-    border-right: 2px solid #000;
-
-    & a {
+	display: flex;
+	flex-direction: column;
+    margin: 0 ${styles.container_margin_medium};
+	padding-top: ${styles.container_margin_medium};
+	
+	& a {
 		text-decoration: none;
 		color: #000;
+		margin-bottom: 15px;
+	}
+
+	@media only screen and (min-width: ${styles.breakpoint_medium}) {
+		flex-direction: row;
+		border-right: 2px solid #000;
+		min-width: 350px;
+
+		margin: 0;
+		padding-top: 0;
+
+		& a {
+			margin-bottom: 0;
+			margin-right: 30px;
+			height: fit-content;
+		}
 	}
 `;

@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 const HeaderContent = ({ className }) => {
 	return (
 		<div className={className}>
-			<h2> CARTÃOPRETO </h2>
+			<h2> MACACAST </h2>
 		</div>
 	);
 };

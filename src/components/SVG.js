@@ -4,9 +4,10 @@ import PropTypes from "prop-types";
 
 import { getPath, getViewBox } from "@/utils/svg"
 
-const SVG = ({ name = "", style = {}, viewBox = "", width = "100%", className = "", height = "100%"}) => <svg
+const SVG = ({ name, style, onClick, viewBox, width, className, height }) => <svg
 	className={className}
 	style={style}
+	onClick={onClick}
 	width={width}
 	height={height}
 	viewBox={viewBox || getViewBox(name)}
@@ -19,6 +20,7 @@ const SVG = ({ name = "", style = {}, viewBox = "", width = "100%", className = 
 SVG.propTypes = {
 	name: PropTypes.string,
 	style: PropTypes.object,
+	onClick: PropTypes.func,
 	viewBox: PropTypes.string,
 	width: PropTypes.string,
 	className: PropTypes.string,
@@ -28,6 +30,7 @@ SVG.propTypes = {
 SVG.defaultProps = {
 	className: "",
 	style: {},
+	onClick: () => { /* do nothing */ },
 	name: "",
 	viewBox: "",
 	width: "100%",

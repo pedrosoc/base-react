@@ -21,11 +21,12 @@ Container.propTypes = {
 
 export default styled(Container)`
     width: ${styles.container_small};
-    margin: 64px auto;
+    margin: ${styles.container_margin_medium} auto;
     padding: 0 ${styles.container_margin_small};
 
     @media only screen and (min-width: ${styles.breakpoint_medium}) {
         width: ${styles.container_medium};
+        margin: ${styles.container_margin_large} auto;
         padding: 0 ${styles.container_margin_medium};
     }
 

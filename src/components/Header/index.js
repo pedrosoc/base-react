@@ -3,17 +3,17 @@ import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 
-import HeaderContent from "./HeaderContent";
-import HeaderLinks from "./HeaderLinks";
+import HeaderContainer from "./HeaderContainer";
 import HeaderLogo from "./HeaderLogo";
+import HeaderMenu from "./HeaderMenu";
 
 const Header = ({ className }) => {
 	return (
 		<div className={className}>
-			<HeaderContent>
+			<HeaderContainer>
 				<HeaderLogo />
-				<HeaderLinks />
-			</HeaderContent>
+				<HeaderMenu />
+			</HeaderContainer>
 		</div>
 	);
 };
