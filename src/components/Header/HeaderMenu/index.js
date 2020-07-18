@@ -1,51 +1,28 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 import MediaQuery from "react-responsive";
-import styled from "styled-components";
 import PropTypes from "prop-types";
 
-import Modal from "@/components/Modal";
-import SVG from "@/components/SVG";
 import styles from "@/constants/styles";
 
-import HeaderItems from "./HeaderItems";
-import HeaderSocial from "./HeaderSocial";
+import HeaderMenuMobile from "./mobile/HeaderMenuMobile";
+import HeaderMenuDesktop from "./desktop/HeaderMenuDesktop";
 
-const HeaderLinks = ({ className }) => {
+const HeaderMenu = () => {
 	return (
-		<div className={className}>
+		<Fragment>
 			<MediaQuery maxDeviceWidth={styles.breakpoint_medium_max}>
-				<Modal
-					trigger={<SVG name="menu" width="25" />}
-					content={
-						<div className="menu">
-							<HeaderSocial />
-							<HeaderItems />
-						</div>
-					}
-				>
-				</Modal>
+				<HeaderMenuMobile />
 			</MediaQuery>
 			<MediaQuery minDeviceWidth={styles.breakpoint_medium}>
-				<HeaderItems />
-				<HeaderSocial />
+				<HeaderMenuDesktop />
 			</MediaQuery>
-		</div>
+		</Fragment>
 	);
 };
 
-HeaderLinks.propTypes = {
+HeaderMenu.propTypes = {
 	className: PropTypes.string
 };
 
-export default styled(HeaderLinks)`
-    display: flex;
-    align-items: center;
-
-	& .menu {
-		width: 300px;
-		height: 100%;
-
-		background-color: #fff;
-	}
-`;
+export default HeaderMenu;
