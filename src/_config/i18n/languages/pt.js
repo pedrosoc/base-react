@@ -4,19 +4,16 @@ const messages = {
 			home: {
 				title: "Início"
 			},
+			header: {
+				home: "Início",
+				about: "Sobre",
+				podcasts: "Podcasts"
+			},
 			about: {
 				title: "Sobre"
 			},
-			posts: {
-				title: "Publicações"
-			},
-			news: {
-				item: "Notícia {{ id }}",
-				title: "Notícias"
-			},
-			snippets: {
-				item: "Trecho {{ id }}",
-				title: "Trechos"
+			podcasts: {
+				title: "Podcasts"
 			}
 		}
 	}

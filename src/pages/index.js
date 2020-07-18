@@ -2,15 +2,14 @@ import React from "react";
 
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
+import GlobalStyle from "@global-style";
 import Header from "@/components/Header";
+import routes from "@/constants/routes";
 
 /* Pages */
 import About from "./About";
-import Feed from "./Feed";
+import Podcasts from "./Podcasts";
 import Home from "./Home";
-import Post from "./Post";
-
-import GlobalStyle from "@global-style";
 
 const App = () => {
 	return (
@@ -20,10 +19,9 @@ const App = () => {
 			<Header />
 
 			<Switch>
-				<Route exact path="/" component={Home}/>
-				<Route exact path="/about" component={About}/>
-				<Route exact path="/feed" component={Feed}/>
-				<Route exact path="/feed/:id" component={Post}/>
+				<Route exact path={routes.home.url} component={Home}/>
+				<Route exact path={routes.podcasts.url} component={Podcasts}/>
+				<Route exact path={routes.about.url} component={About}/>
 			</Switch>
 
 		</BrowserRouter>

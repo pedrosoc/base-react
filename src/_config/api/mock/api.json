@@ -1,50 +1,29 @@
 
 {
-    "news": [
+    "podcasts": [
 		{
             "id": 1,
             "author": "Lucas",
             "title": "Post Title 1",
-            "text": "Post Text 1",
-            "type": "news"
+            "description": "Post Text 1",
+            "spotifyUrl": "https://spotify.com",
+            "youtubeUrl": "https://youtube.com"
         },
 		{
             "id": 2,
             "author": "Lucas",
-            "title": "Post Title 2",
-            "text": "Post Text 2",
-            "type": "news"
+            "title": "Post Title 1",
+            "description": "Post Text 1",
+            "spotifyUrl": "https://spotify.com",
+            "youtubeUrl": "https://youtube.com"
         },
 		{
             "id": 3,
             "author": "Lucas",
-            "title": "Post Title 3",
-            "text": "Post Text 3",
-            "type": "news"
-        }
-    ],
-    "snippets": [
-		{
-            "id": 1,
-            "author": "Lucas",
-            "title": "Snippet Title 1",
-            "text": "Snippet Text 1",
-            "type": "snippets"
-        },
-		{
-            "id": 2,
-            "author": "Lucas",
-            "title": "Snippet Title 2",
-            "text": "Snippet Text 2",
-            "type": "snippets"
-        },
-		{
-            "id": 3,
-            "author": "Lucas",
-            "title": "Snippet Title 3",
-            "text": "Snippet Text 3",
-            "type": "snippets"
+            "title": "Post Title 1",
+            "description": "Post Text 1",
+            "spotifyUrl": "https://spotify.com",
+            "youtubeUrl": "https://youtube.com"
         }
     ]
-
 }
