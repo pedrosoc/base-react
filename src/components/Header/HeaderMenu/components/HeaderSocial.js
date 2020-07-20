@@ -27,7 +27,7 @@ export default styled(HeaderSocial)`
 	height: 84px;
 	max-width: 145px;
 
-	margin: 0 ${styles.container_margin_medium};
+	margin-left: ${styles.container_margin_medium};
 
 	@media only screen and (min-width: ${styles.breakpoint_medium}) {
 		min-width: 145px;

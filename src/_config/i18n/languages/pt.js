@@ -13,7 +13,9 @@ const messages = {
 				title: "Sobre"
 			},
 			podcasts: {
-				title: "Podcasts"
+				title: "Podcasts",
+				lastEpisodes: "Últimos episódios",
+				anotherEpisodes: "Demais episódios"
 			}
 		}
 	}
