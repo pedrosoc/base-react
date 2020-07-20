@@ -1,6 +1,5 @@
-import React, { useState, useEffect, Fragment } from "react";
+import React, { useState, useEffect } from "react";
 
-import i18n from "@i18n";
 import api from "@api";
 import styled from "styled-components";
 import PropTypes from "prop-types";
