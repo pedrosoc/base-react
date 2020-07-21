@@ -10,6 +10,7 @@ const HeaderSocial = ({ className }) => {
 	return (
 		<div className={className}>
 			<SVG name="spotify" width="30" />
+			<SVG name="deezer" width="30" />
 			<SVG name="youtube" width="30" />
 			<SVG name="instagram" width="30" />
 			<SVG name="twitter" width="30" />
@@ -25,11 +26,11 @@ export default styled(HeaderSocial)`
 	display: flex;
 	justify-content: space-between;
 	height: 84px;
-	max-width: 145px;
+	max-width: 175px;
 
 	margin-left: ${styles.container_margin_medium};
 
 	@media only screen and (min-width: ${styles.breakpoint_medium}) {
-		min-width: 145px;
+		min-width: 175px;
 	}
 `;

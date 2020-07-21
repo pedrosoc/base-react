@@ -5,6 +5,10 @@ export default {
 		url: "/",
 		title: i18n.t("header.home")
 	},
+	podcastDetails: {
+		url: "/podcast/:id",
+		urlFor: id => `/podcast/${id}`
+	},
 	podcasts: {
 		url: "/podcasts",
 		title: i18n.t("header.podcasts")
