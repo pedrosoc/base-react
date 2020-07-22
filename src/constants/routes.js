@@ -6,8 +6,8 @@ export default {
 		title: i18n.t("header.home")
 	},
 	podcastDetails: {
-		url: "/podcast/:id",
-		urlFor: id => `/podcast/${id}`
+		url: "/podcasts/:id",
+		urlFor: id => `/podcasts/${id}`
 	},
 	podcasts: {
 		url: "/podcasts",

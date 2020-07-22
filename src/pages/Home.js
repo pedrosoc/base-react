@@ -33,8 +33,12 @@ export const Home = ({ className }) => {
 					<img alt="Macacast" src={Banner} />
 				</Container>
 			</div>
-			<Container className="teste4">
-				{podcasts.map(p => <PodcastCard key={p.id} podcast={p} />)}
+
+			<Container>
+				<h2 className="lastEpisodes">Últimos episódios</h2>
+				<div className="teste4">
+					{podcasts.slice(0, 4).map(p => <PodcastCard key={p.id} podcast={p} />)}
+				</div>
 			</Container>
 		</div>
 	);
@@ -51,11 +55,14 @@ export default styled(Home)`
 		padding: 100px 0;
 	}
 
-	& > .teste4 {
+	& .lastEpisodes {
+		padding: 100px 0 20px;
+	}
+
+	& .teste4 {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
-		padding: 100px 0;
 	}
 
 	& .teste {
@@ -77,6 +84,7 @@ export default styled(Home)`
 			}
 
 			& p {
+				font-size: 22px;
 				margin: 0;
 			}
 		}

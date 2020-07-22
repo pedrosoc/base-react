@@ -8,6 +8,7 @@ import routes from "@/constants/routes";
 
 /* Pages */
 import About from "./About";
+import Podcast from "./Podcast";
 import Podcasts from "./Podcasts";
 import Home from "./Home";
 
@@ -21,7 +22,7 @@ const App = () => {
 			<Switch>
 				<Route exact path={routes.home.url} component={Home}/>
 				<Route exact path={routes.podcasts.url} component={Podcasts}/>
-				<Route exact path={routes.podcastDetails.url} component={Podcasts}/>
+				<Route path={routes.podcastDetails.url} component={Podcast}/>
 				<Route exact path={routes.about.url} component={About}/>
 			</Switch>
 
