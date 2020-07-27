@@ -2,13 +2,13 @@ import React from "react";
 
 import i18n from "@i18n";
 
-import Container from "@/components/Container";
+import Section from "@/components/Section";
 
 export const About = () => {
 	return (
-		<Container>
+		<Section first>
 			<h4> { i18n.t("about.title") } </h4>
-		</Container>
+		</Section>
 	);
 };
 

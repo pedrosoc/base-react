@@ -1,20 +1,36 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import styled from "styled-components";
 import PropTypes from "prop-types";
 
-import SVG from "@/components/SVG";
+import api from "@api";
+
+import SocialIcons from "@/components/SocialIcons";
 import styles from "@/constants/styles";
 
 const HeaderSocial = ({ className }) => {
+	const [social, setSocial] = useState([]);
+
+	const fetchSocial = async () => {
+		const socialList = await api.me.data.getSocial();
+		setSocial(socialList)
+	};
+
+	useEffect(() => {
+		if (!social.length) {
+			fetchSocial();
+		}
+	});
+
 	return (
-		<div className={className}>
-			<SVG name="spotify" width="30" />
-			<SVG name="deezer" width="30" />
-			<SVG name="youtube" width="30" />
-			<SVG name="instagram" width="30" />
-			<SVG name="twitter" width="30" />
-		</div>
+		<SocialIcons
+			uuid="header"
+			size="30"
+			distance="10px"
+			fill="#000000"
+			socialList={social}
+			className={className}
+		/>
 	);
 };
 
@@ -25,12 +41,7 @@ HeaderSocial.propTypes = {
 export default styled(HeaderSocial)`
 	display: flex;
 	justify-content: space-between;
-	height: 84px;
-	max-width: 175px;
+	height: 30px;
 
 	margin-left: ${styles.container_margin_medium};
-
-	@media only screen and (min-width: ${styles.breakpoint_medium}) {
-		min-width: 175px;
-	}
 `;

@@ -5,7 +5,7 @@ const styles = {
 
 	breakpoint_medium_max: "767px",
     
-	container_large: "1140px",
+	container_large: "1200px",
 	container_medium: "720px",
 	container_small: "100%",
     

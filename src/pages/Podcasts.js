@@ -1,14 +1,14 @@
 import React from "react";
 
-import Container from "@/components/Container";
+import Section from "@/components/Section";
 import PodcastFeed from "@/features/podcast/components/PodcastFeed";
 
-export const Home = () => {
+export const Podcasts = () => {
 	return (
-		<Container>
+		<Section first>
 			<PodcastFeed />
-		</Container>
+		</Section>
 	);
 };
 
-export default Home;
+export default Podcasts;

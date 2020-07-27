@@ -1,19 +1,19 @@
-import React, { useState, useEffect } from "react";
-
-import api from "@api";
-import styled from "styled-components";
+import React, { Fragment, useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
-import PodcastCard from "@/features/podcast/components/PodcastCard";
-import Container from "@/components/Container";
+import api from "@api";
+import i18n from "@i18n";
 
-import Banner from "@/assets/images/macacast_macaco.png";
+import Section from "@/components/Section";
+import PodcastList from "@/features/podcast/components/PodcastList";
+
+import HomeBanner from "@/features/me/components/HomeBanner";
 
 export const Home = ({ className }) => {
 	const [podcasts, setPodcasts] = useState([]);
 
 	const fetchaPodcasts = async () => {
-		const episodes = await api.podcast.getAll();
+		const episodes = await api.podcast.data.getAll();
 		setPodcasts(episodes)
 	};
 
@@ -23,24 +23,18 @@ export const Home = ({ className }) => {
 	}, [podcasts]);
 
 	return (
-		<div className={className}>
-			<div className="teste3">
-				<Container className="teste">
-					<div className="teste2">
-						<h2>MACACAST</h2>
-						<p>O PODCAST DA MAIOR DO INTEIOR</p>
-					</div>
-					<img alt="Macacast" src={Banner} />
-				</Container>
-			</div>
+		<Fragment>
+			<Section first colored="#000">
+				<HomeBanner />
+			</Section>
 
-			<Container>
-				<h2 className="lastEpisodes">Últimos episódios</h2>
-				<div className="teste4">
-					{podcasts.slice(0, 4).map(p => <PodcastCard key={p.id} podcast={p} />)}
-				</div>
-			</Container>
-		</div>
+			<Section>
+				<PodcastList
+					title={i18n.t("podcasts.lastEpisodes")}
+					podcasts={podcasts.slice(0, 4)}
+				/>
+			</Section>
+		</Fragment>
 	);
 };
 
@@ -48,45 +42,4 @@ Home.propTypes = {
 	className: PropTypes.string
 };
 
-export default styled(Home)`
-
-	& > .teste3 {
-		background-color: #000;
-		padding: 100px 0;
-	}
-
-	& .lastEpisodes {
-		padding: 100px 0 20px;
-	}
-
-	& .teste4 {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-	}
-
-	& .teste {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		margin: 0 auto;
-
-		& img {
-			max-width: 35%;
-		}
-
-		& .teste2 {
-			color: #fff;
-
-			& h2 {
-				font-size: 90px;
-				margin: 0;
-			}
-
-			& p {
-				font-size: 22px;
-				margin: 0;
-			}
-		}
-	}
-`;
+export default Home;

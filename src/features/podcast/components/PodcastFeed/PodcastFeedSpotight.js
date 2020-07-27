@@ -3,29 +3,31 @@ import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
-import PodcastCard from "./PodcastCard";
+import PodcastCard from "../PodcastCard";
 
-const PodcastList = ({ className, title, podcasts }) => {
-	if (!podcasts.length)
+const PodcastFeedSpotight = ({ className, title, first, second }) => {
+	if (!first)
 		return <Fragment />
 
 	return (
 		<div className={className}>
 			<h3>{title}</h3>
 			<div>
-				{podcasts.map(p => <PodcastCard key={p.id} podcast={p} />)}
+				<PodcastCard spotlight podcast={first} />
+				<PodcastCard spotlight podcast={second} />
 			</div>
 		</div>
 	);
 }
 
-PodcastList.propTypes = {
+PodcastFeedSpotight.propTypes = {
 	className: PropTypes.string,
 	title: PropTypes.string,
-	podcasts: PropTypes.array
+	first: PropTypes.object,
+	second: PropTypes.object
 };
 
-export default styled(PodcastList)`
+export default styled(PodcastFeedSpotight)`
 	& > h3 {
 		margin-bottom: 30px;
 	}

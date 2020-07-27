@@ -1,5 +1,5 @@
 /* eslint-disable complexity */
-import React, { Fragment, useState } from "react";
+import React, { useState } from "react";
 
 import PropTypes from "prop-types";
 
@@ -13,10 +13,7 @@ const Modal = ({ trigger, content }) => {
 		return <ModalTrigger trigger={trigger} openModal={() => setVisibility(true)} />;
 
 	return (
-		<Fragment>
-			<ModalTrigger trigger={trigger} openModal={() => setVisibility(true)} />
-			<ModalContent content={content} type={"menu"} closeModal={() => setVisibility(false)} />
-		</Fragment>
+		<ModalContent content={content} type={"menu"} closeModal={() => setVisibility(false)} />
 	);
 };
 
