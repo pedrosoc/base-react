@@ -4,6 +4,7 @@ const styles = {
 	breakpoint_small: "576px",
 
 	breakpoint_medium_max: "767px",
+	breakpoint_large_max: "1199px",
     
 	container_large: "1200px",
 	container_medium: "720px",

@@ -7,7 +7,7 @@ import SVG from "@/components/SVG";
 
 import HeaderMenuMobileContent from "./HeaderMenuMobileContent";
 
-const HeaderMenuMobile = ({ className }) => {
+const HeaderMenuMobile = () => {
 	return (
 		<Modal
 			trigger={<SVG name="menu" width="25" />}

@@ -31,7 +31,7 @@
         }
     },
     "rules": {
-        "complexity": ["error", 2],
+        "complexity": ["error", 4],
         "consistent-return": "error",
         "dot-notation": "error",
         "eqeqeq": "error",

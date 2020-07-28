@@ -7,9 +7,12 @@ const messages = {
 				altImg: "Logo - Macacast"
 			},
 			header: {
+				title: "Menu",
+				closeSymbol: "X",
 				home: "Início",
 				about: "Sobre",
-				podcasts: "Podcasts"
+				podcasts: "Podcasts",
+				social: "Acompanhe o Macacast em:"
 			},
 			about: {
 				title: "Sobre"

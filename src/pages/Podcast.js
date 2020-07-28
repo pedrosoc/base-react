@@ -9,7 +9,7 @@ import Section from "@/components/Section";
 import PodcastDetails from "@/features/podcast/components/PodcastDetails";
 import PodcastList from "@/features/podcast/components/PodcastList";
 
-export const Podcast = ({ match }) => {
+const Podcast = ({ match }) => {
 	const [podcasts, setPodcasts] = useState([]);
 
 	const fetchPodcasts = async () => {
@@ -32,7 +32,10 @@ export const Podcast = ({ match }) => {
 			</Section>
 
 			<Section>
-				<PodcastList title={i18n.t("podcast.seeAlso")} podcasts={podcasts.slice(0, 4)} />
+				<PodcastList
+					title={i18n.t("podcast.seeAlso")}
+					podcasts={podcasts.slice(0, 3)}
+				/>
 			</Section>
 		</Fragment>
 	);

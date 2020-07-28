@@ -7,14 +7,15 @@ import { NavLink } from "react-router-dom";
 
 import styles from "@/constants/styles";
 
-const HeaderItem = ({ className, to, title }) => {
+const HeaderItem = ({ className, closeModal, to, title }) => {
 	return (
-		<NavLink className={className} to={to}> { title } </NavLink>
+		<NavLink className={className} onClick={closeModal} to={to}> { title } </NavLink>
 	);
 };
 
 HeaderItem.propTypes = {
 	className: PropTypes.string,
+	closeModal: PropTypes.func,
 	to: PropTypes.string,
 	title: PropTypes.string
 };

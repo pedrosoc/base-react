@@ -3,23 +3,28 @@
     "social": [
         {
             "id": 1,
-            "name": "spotify"
+            "name": "spotify",
+            "url": "https://open.spotify.com/show/3KPywFh8G5oAbUuR0Am52E?si=2EI0l-ecQT6XYw7DuBK7bg"
         },
         {
             "id": 2,
-            "name": "deezer"
+            "name": "deezer",
+            "url": "https://www.deezer.com/pt/show/1200062"
         },
         {
             "id": 3,
-            "name": "youtube"
+            "name": "youtube",
+            "url": "https://www.youtube.com/user/macacadareunida1900"
         },
         {
             "id": 4,
-            "name": "instagram"
+            "name": "instagram",
+            "url": "https://www.instagram.com/macacast1/"
         },
         {
             "id": 5,
-            "name": "twitter"
+            "name": "twitter",
+            "url": "https://twitter.com/macacastaapp"
         }
     ],
     "podcasts": [

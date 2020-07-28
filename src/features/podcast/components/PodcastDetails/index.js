@@ -1,14 +1,15 @@
 import React, { Fragment, useState, useEffect } from "react";
 
 import PropTypes from "prop-types";
-import ReactPlayer from "react-player"
-
 import styled from "styled-components";
 
 import api from "@api";
-import PodcastDetailsInfo from "./PodcastDetailsInfo";
+import styles from "@/constants/styles";
 
-export const Podcast = ({ className, id }) => {
+import PodcastDetailsInfo from "./PodcastDetailsInfo";
+import PodcastDetailsPlayer from "./PodcastDetailsPlayer";
+
+const Podcast = ({ className, id }) => {
 	const [podcast, setPodcast] = useState({})
 
 	const fetchPodcast = async () => {
@@ -28,11 +29,7 @@ export const Podcast = ({ className, id }) => {
 	return (
 		<div className={className}>
 			<PodcastDetailsInfo podcast={podcast} />
-			<div className="teste3">
-				<ReactPlayer
-					url={podcast.player}
-				/>
-			</div>
+			<PodcastDetailsPlayer url={podcast.player} />
 		</div>
 	);
 };
@@ -44,11 +41,12 @@ Podcast.propTypes = {
 
 export default styled(Podcast)`
 	display: flex;
+	flex-direction: column;
 	color: #fff;
 
-	& .teste3 {
-		width: 640px;
-		display: flex;
+	@media only screen and (min-width: ${styles.breakpoint_large}) {
+		flex-direction: row;
 		align-items: center;
+		justify-content: space-between;
 	}
 `;

@@ -9,7 +9,7 @@ import PodcastList from "@/features/podcast/components/PodcastList";
 
 import HomeBanner from "@/features/me/components/HomeBanner";
 
-export const Home = ({ className }) => {
+const Home = ({ className }) => {
 	const [podcasts, setPodcasts] = useState([]);
 
 	const fetchaPodcasts = async () => {
@@ -31,7 +31,7 @@ export const Home = ({ className }) => {
 			<Section>
 				<PodcastList
 					title={i18n.t("podcasts.lastEpisodes")}
-					podcasts={podcasts.slice(0, 4)}
+					podcasts={podcasts.slice(0, 3)}
 				/>
 			</Section>
 		</Fragment>

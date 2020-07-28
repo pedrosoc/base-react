@@ -34,8 +34,15 @@ SocialIcons.propTypes = {
 };
 
 export default styled(SocialIcons)`
+	display: flex;
+	flex-direction: column;
+
 	& > h4 {
 		margin-bottom: ${props => props.title ? "20px" : "0"};
+	}
+
+	& > div {
+		height: ${props => `${props.size}px`};
 	}
 
 	& > div > * {

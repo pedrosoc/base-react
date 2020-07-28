@@ -6,7 +6,7 @@ import styled from "styled-components";
 const PodcastDetailsInfoBiographyDataItem = ({ className, name, value }) => {
 	return (
 		<div className={className}>
-			<h4>{name}</h4>
+			<b>{name}</b>
 			<span>{value}</span>
 		</div>
 	);
@@ -19,7 +19,6 @@ PodcastDetailsInfoBiographyDataItem.propTypes = {
 };
 
 export default styled(PodcastDetailsInfoBiographyDataItem)`
-	display: flex;
 	margin-bottom: 5px;
 
 	& h4 {

@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 
 import styled from "styled-components";
 
+import styles from "@/constants/styles";
+
 import PodcastDetailsInfoTitle from "./PodcastDetailsInfoTitle";
 import PodcastDetailsInfoBiography from "./PodcastDetailsInfoBiography";
 import PodcastDetailsInfoSocial from "./PodcastDetailsInfoSocial";
@@ -23,11 +25,14 @@ PodcastDetailsInfo.propTypes = {
 };
 
 export default styled(PodcastDetailsInfo)`
-	& .socialContainer {
-		margin-bottom: 0;
-		
-		& .social > * {
-			margin-right: 20px;
-		}
+	width: 100%;
+	margin-bottom: ${styles.container_margin_medium};
+
+	@media only screen and (min-width: ${styles.breakpoint_medium}) {
+		margin-bottom: ${styles.container_margin_large};
+	}
+
+	@media only screen and (min-width: ${styles.breakpoint_large}) {
+		width: 50%;
 	}
 `;

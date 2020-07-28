@@ -22,5 +22,6 @@ HomeBannerImage.propTypes = {
 };
 
 export default styled(HomeBannerImage)`
+	min-width: 200px;
 	max-width: 35%;
 `;

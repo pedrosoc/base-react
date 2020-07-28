@@ -16,6 +16,7 @@ PodcastDetailsInfo.propTypes = {
 
 export default styled(PodcastDetailsInfo)`
     width: 75px;
+    min-width: 75px;
     height: 75px;
     border-radius: 50px;
     background-position: center;
