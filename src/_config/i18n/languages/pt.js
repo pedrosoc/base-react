@@ -2,21 +2,33 @@ const messages = {
 	pt: {
 		translations: {
 			home: {
-				title: "Início"
+				title: "MACACAST",
+				subtitle: "O PODCAST DA MAIOR DO INTEIOR",
+				altImg: "Logo - Macacast"
+			},
+			header: {
+				title: "Menu",
+				closeSymbol: "X",
+				home: "Início",
+				about: "Sobre",
+				podcasts: "Podcasts",
+				social: "Acompanhe o Macacast em:"
+			},
+			footer: {
+				copyright: "© Copyright 2020",
+				title: "Macacast - O podcast da maior do interior"
 			},
 			about: {
 				title: "Sobre"
 			},
-			posts: {
-				title: "Publicações"
+			podcast: {
+				seeAlso: "Veja também:",
+				avaiableFor: "Disponível também em:"
 			},
-			news: {
-				item: "Notícia {{ id }}",
-				title: "Notícias"
-			},
-			snippets: {
-				item: "Trecho {{ id }}",
-				title: "Trechos"
+			podcasts: {
+				title: "Podcasts",
+				lastEpisodes: "Últimos episódios",
+				anotherEpisodes: "Demais episódios"
 			}
 		}
 	}

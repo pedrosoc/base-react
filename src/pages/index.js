@@ -2,15 +2,16 @@ import React from "react";
 
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
-import Header from "@/components/header";
+import GlobalStyle from "@global-style";
+import Header from "@/components/Header";
+import routes from "@/constants/routes";
 
 /* Pages */
-import About from "../pages/about";
-import Feed from "../pages/feed";
-import Home from "../pages/home";
-import Post from "../pages/post";
-
-import GlobalStyle from "@global-style"; 
+import About from "./About";
+import Podcast from "./Podcast";
+import Podcasts from "./Podcasts";
+import Home from "./Home";
+import Footer from "@/components/Footer";
 
 const App = () => {
 	return (
@@ -20,11 +21,13 @@ const App = () => {
 			<Header />
 
 			<Switch>
-				<Route exact path="/" component={Home}/>
-				<Route exact path="/about" component={About}/>
-				<Route exact path="/feed" component={Feed}/>
-				<Route exact path="/feed/:id" component={Post}/>
+				<Route exact path={routes.home.url} component={Home}/>
+				<Route exact path={routes.podcasts.url} component={Podcasts}/>
+				<Route path={routes.podcastDetails.url} component={Podcast}/>
+				<Route exact path={routes.about.url} component={About}/>
 			</Switch>
+
+			<Footer />
 
 		</BrowserRouter>
 	);

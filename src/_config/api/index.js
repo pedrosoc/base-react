@@ -1,4 +1,4 @@
-import news from "../../features/news/api";
-import snippets from "../../features/snippets/api";
+import me from "@/features/me/api";
+import podcast from "@/features/podcast/api";
 
-export default { news, snippets };
+export default { me, podcast };

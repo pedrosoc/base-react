@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`snapshot test for home component 1`] = `
-<h4>
-   
-  Início
-   
-</h4>
-`;

@@ -3,4 +3,4 @@ const envs = {
 	production: "production"
 };
 
-export { envs };
+export default envs;

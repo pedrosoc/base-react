@@ -1,50 +1,112 @@
 
 {
-    "news": [
-		{
+    "social": [
+        {
             "id": 1,
-            "author": "Lucas",
-            "title": "Post Title 1",
-            "text": "Post Text 1",
-            "type": "news"
+            "name": "spotify",
+            "url": "https://open.spotify.com/show/3KPywFh8G5oAbUuR0Am52E?si=2EI0l-ecQT6XYw7DuBK7bg"
         },
-		{
+        {
             "id": 2,
-            "author": "Lucas",
-            "title": "Post Title 2",
-            "text": "Post Text 2",
-            "type": "news"
+            "name": "deezer",
+            "url": "https://www.deezer.com/pt/show/1200062"
         },
-		{
+        {
             "id": 3,
-            "author": "Lucas",
-            "title": "Post Title 3",
-            "text": "Post Text 3",
-            "type": "news"
+            "name": "youtube",
+            "url": "https://www.youtube.com/user/macacadareunida1900"
+        },
+        {
+            "id": 4,
+            "name": "instagram",
+            "url": "https://www.instagram.com/macacast1/"
+        },
+        {
+            "id": 5,
+            "name": "twitter",
+            "url": "https://twitter.com/macacastaapp"
         }
     ],
-    "snippets": [
+    "podcasts": [
 		{
-            "id": 1,
+            "id": 12,
             "author": "Lucas",
-            "title": "Snippet Title 1",
-            "text": "Snippet Text 1",
-            "type": "snippets"
+            "title": "Resenha com Dicá",
+            "description": "A resenha com o maior de todos na história da Associação Atlética Ponte Preta: Mestre Dicá.",
+            "img": "https://scontent.fcpq7-1.fna.fbcdn.net/v/t1.0-9/109775145_153843819673783_3213937834738905360_n.jpg?_nc_cat=101&_nc_sid=110474&_nc_ohc=KipzTnN9TuoAX9Hgmc2&_nc_ht=scontent.fcpq7-1.fna&oh=faebd99d290d4cec436bf7f8592daae9&oe=5F3BA8EB",
+            "player": "https://youtu.be/GXHvPfV8PSY",
+            "profile": {
+                "photo": "https://carlosbatista.com.br/wp-content/uploads/2019/07/dic%C3%A1.jpg",
+                "biography": [
+                    {
+                        "name": "Nome: ",
+                        "value": "Oscar Sales Bueno Filho"
+                    },
+                    {
+                        "name": "Conhecido por: ",
+                        "value": "Dica"
+                    },
+                    {
+                        "name": "Descrição: ",
+                        "value": "Ex-jogador e maior ídolo da Ponte Preta"
+                    }
+                ]
+            },
+            "social": [
+                {
+                    "name": "youtube",
+                    "url": "https://youtu.be/GXHvPfV8PSY"
+                },
+                {
+                    "name": "spotify",
+                    "url": "https://open.spotify.com/episode/7IAXqYWfHCAjhEziRf7MXW?si=laxKwFKKRwqox9OAdkcK3w"
+                }
+            ]
         },
 		{
-            "id": 2,
+            "id": 11,
             "author": "Lucas",
-            "title": "Snippet Title 2",
-            "text": "Snippet Text 2",
-            "type": "snippets"
+            "title": "Resenha com Roberto",
+            "description": "Neste episódio, conversamos com o goleiro Roberto VOlpato, que passou pela Ponte Preta, e foi vice-acampeão da Copa Sul-Americana em 2013.",
+            "spotifyUrl": "https://spotify.com",
+            "youtubeUrl": "https://youtube.com",
+            "img": "https://scontent.fcpq7-1.fna.fbcdn.net/v/t1.0-9/101272583_117453326646166_7120638241522319360_n.jpg?_nc_cat=111&_nc_sid=110474&_nc_ohc=WJ4FFCElnmYAX-lzIDj&_nc_ht=scontent.fcpq7-1.fna&oh=f6bb0b7d9091ad9f87918acde2dcd967&oe=5F39A63E"
         },
 		{
-            "id": 3,
+            "id": 10,
             "author": "Lucas",
-            "title": "Snippet Title 3",
-            "text": "Snippet Text 3",
-            "type": "snippets"
+            "title": "Resenha com Harison",
+            "description": "Nest episódio, conversamos com o ex-jogador Harison, que atuou pela Macaca num curto período de tempo, mas marcou seu nome na história da Ponte Preta.",
+            "spotifyUrl": "https://spotify.com",
+            "youtubeUrl": "https://youtube.com",
+            "img": "https://scontent.fcpq7-1.fna.fbcdn.net/v/t1.0-9/104922953_141405604250938_7913906515794116239_n.jpg?_nc_cat=109&_nc_sid=110474&_nc_ohc=KIYO5kIZ9_4AX8pmhe-&_nc_ht=scontent.fcpq7-1.fna&oh=6826294ee01470bc28b2f61fee36e48d&oe=5F39C57D"
+        },
+		{
+            "id": 9,
+            "author": "Lucas",
+            "title": "Resenha com Harison",
+            "description": "Nest episódio, conversamos com o ex-jogador Harison, que atuou pela Macaca num curto período de tempo, mas marcou seu nome na história da Ponte Preta.",
+            "spotifyUrl": "https://spotify.com",
+            "youtubeUrl": "https://youtube.com",
+            "img": "https://scontent.fcpq7-1.fna.fbcdn.net/v/t1.0-9/104922953_141405604250938_7913906515794116239_n.jpg?_nc_cat=109&_nc_sid=110474&_nc_ohc=KIYO5kIZ9_4AX8pmhe-&_nc_ht=scontent.fcpq7-1.fna&oh=6826294ee01470bc28b2f61fee36e48d&oe=5F39C57D"
+        },
+		{
+            "id": 8,
+            "author": "Lucas",
+            "title": "Resenha com Harison",
+            "description": "Nest episódio, conversamos com o ex-jogador Harison, que atuou pela Macaca num curto período de tempo, mas marcou seu nome na história da Ponte Preta.",
+            "spotifyUrl": "https://spotify.com",
+            "youtubeUrl": "https://youtube.com",
+            "img": "https://scontent.fcpq7-1.fna.fbcdn.net/v/t1.0-9/104922953_141405604250938_7913906515794116239_n.jpg?_nc_cat=109&_nc_sid=110474&_nc_ohc=KIYO5kIZ9_4AX8pmhe-&_nc_ht=scontent.fcpq7-1.fna&oh=6826294ee01470bc28b2f61fee36e48d&oe=5F39C57D"
+        },
+		{
+            "id": 7,
+            "author": "Lucas",
+            "title": "Resenha com Harison",
+            "description": "Nest episódio, conversamos com o ex-jogador Harison, que atuou pela Macaca num curto período de tempo, mas marcou seu nome na história da Ponte Preta.",
+            "spotifyUrl": "https://spotify.com",
+            "youtubeUrl": "https://youtube.com",
+            "img": "https://scontent.fcpq7-1.fna.fbcdn.net/v/t1.0-9/104922953_141405604250938_7913906515794116239_n.jpg?_nc_cat=109&_nc_sid=110474&_nc_ohc=KIYO5kIZ9_4AX8pmhe-&_nc_ht=scontent.fcpq7-1.fna&oh=6826294ee01470bc28b2f61fee36e48d&oe=5F39C57D"
         }
     ]
-
 }

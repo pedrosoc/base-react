@@ -1,4 +1,4 @@
-import { envs } from "@/constants/environments";
+import envs from "@/constants/environments";
 
 import { config as dev } from "@/environments/dev";
 import { config as prod } from "@/environments/prod";
