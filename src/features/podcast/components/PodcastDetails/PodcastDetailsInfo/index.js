@@ -34,5 +34,6 @@ export default styled(PodcastDetailsInfo)`
 
 	@media only screen and (min-width: ${styles.breakpoint_large}) {
 		width: 50%;
+		margin-bottom: 0;
 	}
 `;

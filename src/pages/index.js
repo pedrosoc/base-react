@@ -11,6 +11,7 @@ import About from "./About";
 import Podcast from "./Podcast";
 import Podcasts from "./Podcasts";
 import Home from "./Home";
+import Footer from "@/components/Footer";
 
 const App = () => {
 	return (
@@ -25,6 +26,8 @@ const App = () => {
 				<Route path={routes.podcastDetails.url} component={Podcast}/>
 				<Route exact path={routes.about.url} component={About}/>
 			</Switch>
+
+			<Footer />
 
 		</BrowserRouter>
 	);

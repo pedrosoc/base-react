@@ -14,6 +14,10 @@ const messages = {
 				podcasts: "Podcasts",
 				social: "Acompanhe o Macacast em:"
 			},
+			footer: {
+				copyright: "© Copyright 2020",
+				title: "Macacast - O podcast da maior do interior"
+			},
 			about: {
 				title: "Sobre"
 			},
