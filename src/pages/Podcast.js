@@ -8,6 +8,7 @@ import Section from "@/components/Section";
 
 import PodcastDetails from "@/features/podcast/components/PodcastDetails";
 import PodcastList from "@/features/podcast/components/PodcastList";
+import { isEmpty } from "@/utils/list";
 
 const Podcast = ({ match }) => {
 	const [podcasts, setPodcasts] = useState([]);
@@ -18,7 +19,7 @@ const Podcast = ({ match }) => {
 	};
 
 	useEffect(() => {
-		if (!podcasts.length) {
+		if (isEmpty(podcasts)) {
 			fetchPodcasts();
 		}
 	});

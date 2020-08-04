@@ -10,6 +10,8 @@ import i18n from "@i18n";
 import SocialIcons from "@/components/SocialIcons";
 import styles from "@/constants/styles";
 
+import { isEmpty } from "@/utils/list";
+
 const HeaderSocial = ({ className }) => {
 	const [social, setSocial] = useState([]);
 
@@ -19,7 +21,7 @@ const HeaderSocial = ({ className }) => {
 	};
 
 	useEffect(() => {
-		if (!social.length) {
+		if (isEmpty(social)) {
 			fetchSocial();
 		}
 	});

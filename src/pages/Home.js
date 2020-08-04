@@ -9,6 +9,8 @@ import PodcastList from "@/features/podcast/components/PodcastList";
 
 import HomeBanner from "@/features/me/components/HomeBanner";
 
+import { isEmpty } from "@/utils/list";
+
 const Home = ({ className }) => {
 	const [podcasts, setPodcasts] = useState([]);
 
@@ -18,7 +20,7 @@ const Home = ({ className }) => {
 	};
 
 	useEffect(() => {
-		if (!podcasts.length)
+		if (isEmpty(podcasts))
 			fetchaPodcasts();
 	}, [podcasts]);
 

@@ -8,6 +8,8 @@ import i18n from "@i18n";
 import PodcastFeedSpotight from "./PodcastFeedSpotight";
 import PodcastList from "../PodcastList";
 
+import { isEmpty } from "@/utils/list";
+
 const PodcastFeed = () => {
 	const [podcasts, setPodcasts] = useState([]);
 
@@ -17,15 +19,15 @@ const PodcastFeed = () => {
 	};
 
 	useEffect(() => {
-		if (!podcasts.length)
+		if (isEmpty(podcasts)) {
 			fetchaPodcasts();
+		}
 	}, [podcasts]);
-
-	const [first, second, ...otherEpisodes] = podcasts;
-
-	if (!first)
+	
+	if (isEmpty(podcasts))
 		return <Fragment />
 
+	const [first, second, ...otherEpisodes] = podcasts;
 	return (
 		<Fragment>
 			<PodcastFeedSpotight

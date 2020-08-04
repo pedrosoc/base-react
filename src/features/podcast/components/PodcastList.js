@@ -5,8 +5,10 @@ import styled from "styled-components";
 
 import PodcastCard from "./PodcastCard";
 
+import { isEmpty } from "@/utils/list";
+
 const PodcastList = ({ className, title, podcasts }) => {
-	if (!podcasts.length)
+	if (isEmpty(podcasts))
 		return <Fragment />
 
 	return (
