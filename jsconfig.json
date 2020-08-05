@@ -8,6 +8,7 @@
             "@api": ["./_config/api/index"],
             "@i18n": ["./_config/i18n/index"],
             "@http": ["./_config/http"],
+            "@firebaseApi": ["./_config/firebase"],
             "@global-style": ["./_config/css/globalStyle"]
         }
     },

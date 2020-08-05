@@ -13,12 +13,12 @@ const Podcast = ({ className, id }) => {
 	const [podcast, setPodcast] = useState({})
 
 	const fetchPodcast = async () => {
-		const result = await api.podcast.data.get(id);
-		setPodcast(result)
+		const result = await api.podcast.data.getByEpisode(id);
+		setPodcast(result[0])
 	};
 
 	useEffect(() => {
-		if (!podcast.id) {
+		if (id !== podcast.episode) {
 			fetchPodcast();
 		}
 	});

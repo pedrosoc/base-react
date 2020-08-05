@@ -6,6 +6,9 @@ import PodcastDetailsInfoBiographyImage from "./PodcastDetailsInfoBiographyImage
 import PodcastDetailsInfoBiographyData from "./PodcastDetailsInfoBiographyData";
 
 const PodcastDetailsInfo = ({ className, profile }) => {
+	if (!profile) 
+		return <div className={className} /> 
+
 	return (
 		<div className={className}>
 			<h4> Biografia: </h4>

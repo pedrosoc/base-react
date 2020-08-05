@@ -8,23 +8,23 @@ import Section from "@/components/Section";
 
 import PodcastDetails from "@/features/podcast/components/PodcastDetails";
 import PodcastList from "@/features/podcast/components/PodcastList";
-import { isEmpty } from "@/utils/list";
 
 const Podcast = ({ match }) => {
+	const { id } = match.params;
+	const [podcastId, setPodcastId] = useState(null)
 	const [podcasts, setPodcasts] = useState([]);
 
-	const fetchPodcasts = async () => {
-		const episodes = await api.podcast.data.getAll();
-		setPodcasts(episodes)
-	};
-
 	useEffect(() => {
-		if (isEmpty(podcasts)) {
+		const fetchPodcasts = async () => {
+			const episodes = await api.podcast.data.getSomeDifferent(id, 3);
+			setPodcasts(episodes)
+		};
+
+		if (id !== podcastId) {
+			setPodcastId(id)
 			fetchPodcasts();
 		}
-	});
-
-	const { id } = match.params;
+	}, [id, podcastId, podcasts]);
 
 	return (
 		<Fragment>
@@ -35,7 +35,7 @@ const Podcast = ({ match }) => {
 			<Section>
 				<PodcastList
 					title={i18n.t("podcast.seeAlso")}
-					podcasts={podcasts.slice(0, 3)}
+					podcasts={podcasts}
 				/>
 			</Section>
 		</Fragment>

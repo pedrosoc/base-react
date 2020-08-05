@@ -6,6 +6,7 @@ import styled from "styled-components";
 import PodcastCard from "./PodcastCard";
 
 import { isEmpty } from "@/utils/list";
+import styles from "@/constants/styles";
 
 const PodcastList = ({ className, title, podcasts }) => {
 	if (isEmpty(podcasts))
@@ -35,6 +36,21 @@ export default styled(PodcastList)`
 	& > div {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;
+
+		@media only screen and (min-width: ${styles.breakpoint_medium}) {
+			& > a {
+				margin-right: 13px;
+			}
+		}
+
+		@media only screen and (min-width: ${styles.breakpoint_large}) {
+			& > a {
+				margin-right: 21px;
+			}
+		}
+
+		& > a:nth-child(3n) {
+			margin-right: 0;
+		}
 	}
 `;

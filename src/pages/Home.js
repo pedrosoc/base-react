@@ -15,7 +15,7 @@ const Home = ({ className }) => {
 	const [podcasts, setPodcasts] = useState([]);
 
 	const fetchaPodcasts = async () => {
-		const episodes = await api.podcast.data.getAll();
+		const episodes = await api.podcast.data.getSome(3);
 		setPodcasts(episodes)
 	};
 
@@ -33,7 +33,7 @@ const Home = ({ className }) => {
 			<Section>
 				<PodcastList
 					title={i18n.t("podcasts.lastEpisodes")}
-					podcasts={podcasts.slice(0, 3)}
+					podcasts={podcasts}
 				/>
 			</Section>
 		</Fragment>

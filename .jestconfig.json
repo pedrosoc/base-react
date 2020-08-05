@@ -34,7 +34,8 @@
     "^(@global-style)$": "<rootDir>/src/_config/css/globalStyle",
     "^(@api)$": "<rootDir>/src/_config/api",
     "^(@i18n)$": "<rootDir>/src/_config/i18n",
-    "^(@http)$": "<rootDir>/src/_config/http"
+    "^(@http)$": "<rootDir>/src/_config/http",
+    "^(@firebaseApi)$": "<rootDir>/src/_config/firebase"
   },
   "moduleFileExtensions": [
     "web.js",
