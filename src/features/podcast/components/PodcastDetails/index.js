@@ -20,6 +20,7 @@ const Podcast = ({ className, id }) => {
 	useEffect(() => {
 		if (id !== podcast.episode) {
 			fetchPodcast();
+			window.scrollTo(0, 0);
 		}
 	});
 
