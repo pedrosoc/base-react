@@ -25,10 +25,12 @@ export default styled(HomeBannerTitle)`
     flex-direction: column;
     align-items: center;
 
+    font-family: "Poppins";
     color: #fff;
     
     & h2 {
         font-size: 50px;
+        line-height: 1em;
         margin: 40px 0 0;
     }
 

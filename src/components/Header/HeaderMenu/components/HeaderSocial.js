@@ -54,10 +54,6 @@ export default styled(HeaderSocial)`
 	margin: auto;
 	margin-top: ${styles.container_margin_large};
 
-	& h4 {
-		font-weight: 500;
-	}
-
 	@media only screen and (min-width: ${styles.breakpoint_medium}) {
 		margin-top: 0;
 		margin-left: ${styles.container_margin_medium};
