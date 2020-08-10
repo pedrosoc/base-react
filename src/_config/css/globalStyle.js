@@ -1,19 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-import PoppinsFont from "./fonts/Poppins-Medium.ttf";
-import RobotoFont from "./fonts/Roboto-Regular.ttf";
-
 const GlobalStyle = createGlobalStyle`
-  @font-face {
-    font-family: "Poppins";
-    src: url(${PoppinsFont}) format('truetype');
-  }
-
-  @font-face {
-    font-family: "Roboto";
-    src: url(${RobotoFont}) format('truetype');
-  }
-
   * {
     box-sizing: border-box;
   }

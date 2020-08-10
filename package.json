@@ -81,6 +81,7 @@
     "dev": "concurrently \"yarn start\" \"yarn mock\"",
     "test": "jest --config ./.jestconfig.json",
     "test:ci": "cross-env CI=true yarn test",
+    "deploy": "yarn build && firebase deploy",
     "lint": "eslint ."
   },
   "browserslist": {

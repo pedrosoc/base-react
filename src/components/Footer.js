@@ -24,7 +24,7 @@ export default styled(Footer)`
     display: flex;
     flex-direction: column;
 
-	font-family: "Poppins";
+	font-family: "Poppins", sans-serif;
     color: #666;
     font-size: 12px;
     

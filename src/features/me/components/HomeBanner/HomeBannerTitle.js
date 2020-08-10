@@ -25,7 +25,7 @@ export default styled(HomeBannerTitle)`
     flex-direction: column;
     align-items: center;
 
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     color: #fff;
     
     & h2 {
