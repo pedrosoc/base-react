@@ -2,7 +2,8 @@ const styles = {
 	breakpoint_large: "1200px",
 	breakpoint_medium: "768px",
 	breakpoint_small: "576px",
-
+	
+	breakpoint_small_max: "575px",
 	breakpoint_medium_max: "767px",
 	breakpoint_large_max: "1199px",
     
