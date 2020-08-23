@@ -18,7 +18,7 @@ const PodcastCardInfo = ({ className, title, episode, description }) => {
 PodcastCardInfo.propTypes = {
 	className: PropTypes.string,
 	title: PropTypes.string,
-	episode: PropTypes.number,
+	episode: PropTypes.string,
 	description: PropTypes.string
 };
 

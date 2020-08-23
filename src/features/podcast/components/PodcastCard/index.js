@@ -14,12 +14,12 @@ const PodcastCard = ({ className, podcast, spotlight }) => {
 	if (!podcast)
 		return <Fragment />
 
-	const url = routes.podcastDetails.urlFor(podcast.id);
+	const url = routes.podcastDetails.urlFor(podcast.episode);
 
 	return (
 		<NavLink to={url} className={className}>
 			<PodcastCardImage spotlight={spotlight} src={podcast.img} />
-			<PodcastCardInfo title={podcast.title} episode={podcast.id} description={podcast.description} />
+			<PodcastCardInfo title={podcast.title} episode={podcast.episode} description={podcast.description} />
 		</NavLink>
 	);
 }
@@ -39,6 +39,10 @@ export default styled(PodcastCard)`
     text-decoration: none;
 
 	@media only screen and (min-width: ${styles.breakpoint_medium}) {
-    	width: ${props => props.spotlight ? "49%" : "32%"};
+    	width: ${props => props.spotlight ? "49%" : "215px"};
+	}
+
+	@media only screen and (min-width: ${styles.breakpoint_large}) {
+    	width: ${props => props.spotlight ? "49%" : "370px"};
 	}
 `;

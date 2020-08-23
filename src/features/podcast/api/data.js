@@ -1,9 +1,46 @@
-import http from "@http";
+import firebase from "@firebaseApi";
+import { parseResponse } from "@/utils/firebaseUtils";
 
-const getAll = () => http.get("/podcasts")
-	.then(({ data }) => data);
+const getAll = () => firebase
+	.collection("podcasts")
+	.orderBy("episode", "desc")
+	.get()
+	.then(q => parseResponse(q));
 
-const get = id => http.get(`/podcasts/${id}`)
-	.then(({ data }) => data);
+const getByEpisode = ep => firebase
+	.collection("podcasts")
+	.where("episode", "==", ep)
+	.get()
+	.then(q => parseResponse(q));
+	
+const getSome = limit => firebase
+	.collection("podcasts")
+	.orderBy("episode", "desc")
+	.limit(limit)
+	.get()
+	.then(q => parseResponse(q));
+	
+const getSomeDifferent = async (ep, limit) => {
+	const recent = await firebase
+		.collection("podcasts")
+		.orderBy("episode", "desc")
+		.where("episode", ">", ep)
+		.limit(limit)
+		.get()
+		.then(q => parseResponse(q));
 
-export default { getAll, get };
+	if (recent.length === limit)
+		return recent;
+
+	const old = await firebase
+		.collection("podcasts")
+		.orderBy("episode", "desc")
+		.where("episode", "<", ep)
+		.limit(limit - recent.length)
+		.get()
+		.then(q => parseResponse(q));
+
+	return [...recent, ...old];
+}
+
+export default { getAll, getSome, getByEpisode, getSomeDifferent };

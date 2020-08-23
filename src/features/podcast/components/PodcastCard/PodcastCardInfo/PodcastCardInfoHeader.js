@@ -17,7 +17,7 @@ const PodcastCardInfoHeader = ({ className, title, episode }) => {
 PodcastCardInfoHeader.propTypes = {
 	className: PropTypes.string,
 	title: PropTypes.string,
-	episode: PropTypes.number
+	episode: PropTypes.string
 };
 
 export default styled(PodcastCardInfoHeader)`

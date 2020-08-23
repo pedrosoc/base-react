@@ -23,7 +23,7 @@ const App = () => {
 			<Switch>
 				<Route exact path={routes.home.url} component={Home}/>
 				<Route exact path={routes.podcasts.url} component={Podcasts}/>
-				<Route path={routes.podcastDetails.url} component={Podcast}/>
+				<Route exact path={routes.podcastDetails.url} component={Podcast}/>
 				<Route exact path={routes.about.url} component={About}/>
 			</Switch>
 

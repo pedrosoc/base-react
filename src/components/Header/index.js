@@ -23,7 +23,6 @@ Header.propTypes = {
 };
 
 export default styled(Header)`
-	font-family: "Poppins";
-	font-weight: 500;
+	font-family: "Poppins", sans-serif;
 	box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
 `;

@@ -6,10 +6,10 @@ import styled from "styled-components";
 import Container from "./Container";
 import styles from "@/constants/styles";
 
-const Section = ({ className, colored, children }) => {
+const Section = ({ className, colored, type, children }) => {
 	return (
 		<div className={className}>
-			<Container>
+			<Container type={type}>
 				{children}
 			</Container>
 		</div>
@@ -18,8 +18,9 @@ const Section = ({ className, colored, children }) => {
 
 Section.propTypes = {
 	className: PropTypes.string,
+	children: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
 	colored: PropTypes.string,
-	children: PropTypes.oneOfType([PropTypes.array, PropTypes.object])
+	type: PropTypes.string
 };
 
 export default styled(Section)`

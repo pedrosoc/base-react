@@ -20,6 +20,7 @@ PodcastDetailsInfoTitle.propTypes = {
 
 export default styled(PodcastDetailsInfoTitle)`
     & h1 {
+		font-family: "Poppins", sans-serif;
         font-size: 42px;
         margin: 0; 
     }

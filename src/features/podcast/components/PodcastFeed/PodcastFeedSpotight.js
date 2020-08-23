@@ -11,7 +11,7 @@ const PodcastFeedSpotight = ({ className, title, first, second }) => {
 
 	return (
 		<div className={className}>
-			<h3>{title}</h3>
+			<h4>{title}</h4>
 			<div>
 				<PodcastCard spotlight podcast={first} />
 				<PodcastCard spotlight podcast={second} />
@@ -28,7 +28,7 @@ PodcastFeedSpotight.propTypes = {
 };
 
 export default styled(PodcastFeedSpotight)`
-	& > h3 {
+	& > h4 {
 		margin-bottom: 30px;
 	}
 

@@ -297,6 +297,7 @@ module.exports = function(webpackEnv) {
 			  "@global-style": path.resolve(__dirname, "..", "src", "_config", "css", "globalStyle"),
 			  "@i18n": path.resolve(__dirname, "..", "src", "_config", "i18n"),
 			  "@http": path.resolve(__dirname, "..", "src", "_config", "http"),
+			  "@firebaseApi": path.resolve(__dirname, "..", "src", "_config", "firebase"),
         // Allows for better profiling with ReactDevTools
         ...(isEnvProductionProfile && {
           "react-dom$": "react-dom/profiling",

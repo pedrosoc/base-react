@@ -10,6 +10,8 @@ import i18n from "@i18n";
 import SocialIcons from "@/components/SocialIcons";
 import styles from "@/constants/styles";
 
+import { isEmpty } from "@/utils/list";
+
 const HeaderSocial = ({ className }) => {
 	const [social, setSocial] = useState([]);
 
@@ -19,7 +21,7 @@ const HeaderSocial = ({ className }) => {
 	};
 
 	useEffect(() => {
-		if (!social.length) {
+		if (isEmpty(social)) {
 			fetchSocial();
 		}
 	});
@@ -51,10 +53,6 @@ export default styled(HeaderSocial)`
 	width: fit-content;
 	margin: auto;
 	margin-top: ${styles.container_margin_large};
-
-	& h4 {
-		font-weight: 500;
-	}
 
 	@media only screen and (min-width: ${styles.breakpoint_medium}) {
 		margin-top: 0;

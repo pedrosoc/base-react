@@ -1,10 +1,15 @@
-import React from "react";
+import React, { Fragment } from "react";
 import PropTypes from "prop-types";
-
-import SVG from "@/components/SVG";
 import styled from "styled-components";
 
+import SVG from "@/components/SVG";
+import { isEmpty } from "@/utils/list";
+
 const SocialIcons = ({ className, uuid, title, size, distance, fill, socialList }) => {
+	if (isEmpty(socialList)) {
+		return <Fragment />
+	}
+	
 	return (
 		<div className={className}>
 			<h4> {title} </h4>
