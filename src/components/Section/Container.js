@@ -6,7 +6,7 @@ import styled from "styled-components";
 import containerTypes from "@/constants/containerTypes";
 import styles from "@/constants/styles";
 
-const Container = ({ className, children }) => {
+const Container = ({ className, type, children }) => {
 	return (
 		<div className={className}>
 			{children}
@@ -16,10 +16,14 @@ const Container = ({ className, children }) => {
 
 Container.propTypes = {
 	className: PropTypes.string,
-	children: PropTypes.oneOfType([PropTypes.array, PropTypes.object])
+	children: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
+	type: PropTypes.string
 };
 
 export default styled(Container)`
+    font-size: 18px;
+    line-height: 1.3;
+
     width: ${styles.container_small};
     margin: 0 auto;
     padding: ${styles.container_margin_medium} ${styles.container_margin_small};

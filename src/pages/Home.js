@@ -32,6 +32,7 @@ const Home = ({ className }) => {
 
 			<Section>
 				<PodcastList
+					showLink
 					title={i18n.t("podcasts.lastEpisodes")}
 					podcasts={podcasts}
 				/>

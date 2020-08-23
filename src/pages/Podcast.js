@@ -34,7 +34,8 @@ const Podcast = ({ match }) => {
 
 			<Section>
 				<PodcastList
-					title={i18n.t("podcast.seeAlso")}
+					showLink
+					title={i18n.t("podcasts.lastEpisodes")}
 					podcasts={podcasts}
 				/>
 			</Section>
